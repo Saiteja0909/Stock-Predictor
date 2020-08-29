@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          Stock Predictor
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/1.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">       Live Stock values today  </div>
+            <a href="https://economictimes.indiatimes.com/markets/stocks">Visit site</a>
+
+          </div>
+        </div>
+
+        
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">       True Stock values predictor  </div>
+            <a href="stockpredictor.html">Visit site</a>
+
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+            </div>
+
+            <div class="subtitle">        Accurate stock tips  </div>
+            <a href="https://www.multibaggershares.com/past-performance/?msclkid=9c65802b73bc18d30f51df6114a443c3">Visit site</a>
+            
+          </div>
+        </div>
+
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">  Trusted sites for investment  </div>
+            <a href="https://www.5paisa.com/">5paisa</a>
+            <a href="https://zerodha.com/">zerodha</a>
+            
+          </div>
+        </div>
+
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/4.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            </div>
+
+            <div class="subtitle">        Live Stock news   </div>
+            <a href="https://www.financialexpress.com/market/">Visit site</a>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+
+<body>
+    <h1>Confused of where to invest?</h1>
+    
+    <p>
+        <strong>Stock Market</strong>
+        <br>Hello Friends,
+
+        <br>There are more than 1.2 billion population in India, out of that less than 2% of population invest in stock market, but still, there are 1000's of an advisory firm who follow their own trading strategies.
+        The equity market in India is brimming with investment opportunities. But, to invest in the best option one should follow some effective trading strategies to achieve good results.
+        
+        <br>There are some traders who follow their own stock trading strategy. Their strategies may base on technical analysis or fundamental analysis.
+        
+    </p>
+    <p>
+      <strong>Is investing in the stock market worth it?</strong>
+        <br>First of all, everyone knows it’s a long term game so you will have always best return on longer run as compare to short period. Buy and hold strategies work too good on blue chips company and midcap firm which 
+        have high probability or good earnings growth. In this kind of company you might be able to get return in terms of multiple.
+
+        On the shorter side if you have good knowledge about stock market than you can try to find fundamentally good and also technically strong firm which will give you best return compare to index of any others for short 
+        term period only. Or else you can take a help of advisory firm which will help you identify good company and make you profitable.
+        
+        Investing in stock market can make people rich and it can make you poor also. Stock market is like Ocean. It looks beautiful and it’s scary too. As you know we have to learn everything before entering into the Ocean,
+        here also you have to learn everything before investing. If you are not aware about the risk involved and you don’t have sufficient knowledge, you may loose your entire capital. If you want to be rich or wealthy from 
+        stock market, you have to learn how to earn. If you are not earning after learning, you have to change the way you think and you have to improvise yourself.
+    </p>
+        
+
+</body>
+
+
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
